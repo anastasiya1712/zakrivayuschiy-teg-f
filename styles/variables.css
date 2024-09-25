@@ -1,9 +1,26 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
-:root {
+ :root {
   --main-font: "Inter";
   --accent-font: "Press Start 2P";
-  --main-text-weight-light: 400;
-  --headline-weight-light: 700;
-  --main-text-weight-dark: 465;
-  --headline-weight-dark: 785;
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --weight-main-font: 400;
+  --weight-accent-font: 700;
+  --background-image: repeating-linear-gradient(
+      90deg,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+  --header_width: clamp(650px, 700px, 750px);
+  --header-bg-color: #fff;
 }
