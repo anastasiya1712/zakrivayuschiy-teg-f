@@ -11,17 +11,140 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
-
 */
 
 .page {
-  font-family: var(--main-font), sans-serif;
-  min-inline-size: 320px;
-  min-block-size: 100dvb;
-  font-variation-settings: "wght"
-    var(--main-text-weight-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 960px;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  background-image: var(--background-image);
+  background-size: cover;
 }
 
-:root {
-  color-scheme: normal; /*правильно ли?*/
+.header {
+  min-height: 368px;
+  margin: auto;
+  margin-top: 102px;
+  margin-bottom: 102px;
+  background-color: var(--header-bg-color);
+}
+
+.header_width {
+  width: var(--header_width);
+}
+
+.header_logo-group,
+.theme-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header_logo-group {
+  width: clamp(450px, 455px, 460px);
+  margin: 0 auto;
+}
+
+.header_logo-group-title {
+  padding-top: clamp(135px, 136px, 137px);
+  font-weight: 400;
+  font-size: clamp(64px, 65px, 66px);
+  line-height: 65px;
+  font-family: var(--accent-font);
+}
+
+.header_logo-group-text {
+  font-weight: 400;
+  font-size: clamp(22px, 23px, 24px);
+  line-height: 23px;
+}
+
+.theme-menu {
+  padding: 25px 0;
+}
+
+.theme-menu__button {
+  border: medium none;
+  background-color: transparent;
+}
+
+.theme-menu__button:disabled::before {
+  content: "▶";
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 696px;
+  background-color: var(--main-bg-color);
+}
+
+.card_text-block {
+  margin-left: 25px;
+  margin-right: 25px;
+  padding-top: 27px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.title_card {
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-right: 24px;
+}
+
+.button__text {
+  font-weight: 400;
+}
+
+.card__like-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 38px;
+  margin-bottom: 25px;
+  border: 2px solid #000;
+  background-color: transparent;
+}
+
+.card_preparation-for-work,
+.card_blank-slate,
+.card_wont-work,
+.card_chasing-ideal,
+.card_whos-nearby,
+.card_workaround-strategies,
+.card_hands-drop,
+.card_am-here {
+  margin-bottom: 50px;
+}
+
+.card_text-border {
+  outline: var(--border-card);
+}
+
+.picture-img {
+  display: flex;
+  justify-content: center;
+}
+
+.picture_with-sepia {
+  filter: sepia(70%);
+}
+
+.picture_with-saturate {
+  filter: saturate(400%);
+}
+
+.picture_with-invert {
+  filter: invert(0.8);
+}
+
+.picture_with-blur {
+  filter: blur(1rem);
 }
