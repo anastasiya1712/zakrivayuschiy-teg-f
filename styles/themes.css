@@ -63,7 +63,7 @@
 }
 
 :root.theme-light {
-  --main-font: "Inter";
+  --main-font: "Inter", sans-serif;
   --accent-font: "Press Start 2P";
   --background-color: #ffffff;
   --text-color: #000000;

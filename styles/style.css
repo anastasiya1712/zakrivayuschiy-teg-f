@@ -33,11 +33,20 @@
 }
 
 .header {
-  min-height: 368px;
+  height: clamp(367px, 368px, 369px);
+  width: clamp(699px, 700px, 701px);
   margin: auto;
   margin-top: 102px;
   margin-bottom: 102px;
   background-color: var(--header-bg-color);
+  border: var(--border-card);
+}
+
+@media (width <= 375px) {
+  .header {
+    height: clamp(326px, 327px, 328px);
+    width: clamp(374px, 375px, 376px);
+  }
 }
 
 .header_width {
@@ -67,11 +76,22 @@
 .header_logo-group-text {
   font-weight: 400;
   font-size: clamp(22px, 23px, 24px);
-  line-height: 23px;
+  font-family: var(--accent-font);
+}
+
+.word {
+  text-transform: uppercase;
 }
 
 .theme-menu {
   padding: 25px 0;
+  font-family: var(--accent-font);
+  text-transform: uppercase;
+}
+
+.theme-menu__list {
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .theme-menu__button {
@@ -86,8 +106,14 @@
 .main {
   display: flex;
   flex-direction: column;
-  width: 696px;
+  width: clamp(695px, 696px, 697px);
   background-color: var(--main-bg-color);
+}
+
+@media (width <= 375px) {
+  .main {
+    width: clamp(374px, 375px, 376px);
+  }
 }
 
 .card_text-block {
@@ -97,6 +123,7 @@
   margin-right: 25px;
   margin-left: 25px;
   padding-top: 27px;
+  padding-bottom: 25px;
 }
 
 .title_card {
@@ -116,8 +143,7 @@
   align-items: center;
   width: 130px;
   height: 38px;
-  margin-bottom: 25px;
-  border: 2px solid #000;
+  border: var(--border-card);
   background-color: transparent;
 }
 
@@ -136,9 +162,17 @@
   outline: var(--border-card);
 }
 
+.button-like {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+  gap: 12px;
+}
+
 .picture-img {
   display: flex;
   justify-content: center;
+  outline: var(--border-card);
 }
 
 .picture_with-sepia {
@@ -153,6 +187,52 @@
   filter: invert(0.8);
 }
 
+.picture_with-hue-rotate {
+  filter: hue-rotate(20deg);
+}
+
 .picture_with-blur {
   filter: blur(1rem);
+}
+
+.footer {
+  width: 335px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  border: var(--border-card);
+  background-color: var(--background-color);
+}
+
+@media (width <= 375px) {
+  .footer {
+    width: 306px;
+    height: 84px;
+  }
+}
+
+.footer_button {
+  background-color: transparent;
+  border: medium none;
+  font-family: var(--accent-font);
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (width <= 375px) {
+  .footer_button {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.button__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
