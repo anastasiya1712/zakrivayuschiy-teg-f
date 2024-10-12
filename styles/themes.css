@@ -7,8 +7,9 @@
 :root.theme-dark {
   --background-color: #000000;
   --text-color: #00cc14;
-  --weight-main-font: 465;
-  --weight-accent-font: 785;
+  --accent-color: #00cc14;
+  --main-font-weight: 465;
+  --accent-font-weight: 785;
   --background-image: repeating-linear-gradient(
       90deg,
       #000,
@@ -26,16 +27,27 @@
     linear-gradient(to bottom, #007f0c 0.01%, #004306);
   --header_width: clamp(650px, 700px, 750px);
   --header-bg-color: #000;
-  --main-bg-color: #000;
-  --border-card: 2px solid #007f0c;
+  --card-bg-color: #000;
+  --border-card: 2px solid #00cc14;
+  --lable-text-shadow: #000;
+  --heart-color: #00cc14;
+  --border-menu-color: #00cc14;
+  --btn-background-slide: #00cc14;
+  --btn-text-color: #00cc14;
+  --btn-shadow: #00cc14;
+  --heart-border-color: #000;
+  --focus-heart-border-color: #00cc14;
+  --heart-contour-color: #00cc14;
+  --fill-color: #ff0000;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: #000000;
     --text-color: #00cc14;
-    --weight-main-font: 465;
-    --weight-accent-font: 785;
+    --accent-color: #00cc14;
+    --main-font-weight: 465;
+    --accent-font-weight: 785;
     --background-image: repeating-linear-gradient(
         90deg,
         #000,
@@ -53,16 +65,27 @@
       linear-gradient(to bottom, #007f0c 0.01%, #004306);
     --header_width: clamp(650px, 700px, 750px);
     --header-bg-color: #000;
-    --main-bg-color: #000;
-    --border-card: 2px solid #007f0c;
+    --card-bg-color: #000;
+    --border-card: 2px solid #00cc14;
+    --lable-text-shadow: #000;
+    --heart-color: #00cc14;
+    --border-menu-color: #00cc14;
+    --btn-background-slide: #00cc14;
+    --btn-text-color: #00cc14;
+    --btn-shadow: #00cc14;
+    --heart-border-color: #000;
+    --focus-heart-border-color: #00cc14;  
+    --heart-contour-color: #00cc14;
+    --fill-color: #ff0000;
   }
 }
 
 :root.theme-light {
-  --background-color: #ffffff;
-  --text-color: #000000;
-  --weight-main-font: 400;
-  --weight-accent-font: 700;
+  --background-color: #fff;
+  --text-color: #000;
+  --accent-color: #000;
+  --main-font-weight: 400;
+  --accent-font-weight: 700;
   --background-image: repeating-linear-gradient(
       90deg,
       #d3d3d3,
@@ -80,6 +103,16 @@
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
   --header_width: clamp(650px, 700px, 750px);
   --header-bg-color: #fff;
-  --main-bg-color: #fff;
+  --card-bg-color: #fff;
   --border-card: 2px solid #000;
+  --lable-text-shadow: #fff;
+  --heart-color: #000;
+  --border-menu-color: #000;
+  --btn-background-slide: #000;
+  --btn-text-color: #fff;
+  --btn-shadow: #000;
+  --heart-border-color: #fff;
+  --focus-heart-border-color: #000;
+  --heart-contour-color: #000;
+  --fill-color: #ff0000;
 }
