@@ -4,38 +4,27 @@
 :root {
   --main-font: "Inter";
   --accent-font: "Press Start 2P", "Arial", sans-serif;
-  --background-color: #fff;
-  --text-color: #000;
+  --main-font-wght: 400;
+  --accent-font-wght: 700;
   --accent-color: #000;
-  --main-font-weight: 400;
-  --accent-font-weight: 700;
-  --block-text-weight: 400;
-  --background-image: repeating-linear-gradient(
+  --bg-color: #FFF;
+  --bg-image: repeating-linear-gradient(
       90deg,
-      #d3d3d3,
-      #d3d3d3 2px,
+      #D3D3D3,
+      #D3D3D3 2px,
       transparent 2px,
       transparent 4px
     ),
     repeating-linear-gradient(
       0deg,
-      #d3d3d3,
-      #d3d3d3 2px,
+      #D3D3D3,
+      #D3D3D3 2px,
       transparent 2px,
       transparent 4px
     ),
-    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
-  --header-bg-color: #fff;
-  --card-bg-color: #fff;
-  --border-card: 2px solid #000;
-  --lable-text-shadow: #fff;
-  --heart-color: #000;
-  --border-menu-color: #000;
-  --btn-background-slide: #000;
+    linear-gradient(to bottom, #E7E7E7 0.01%, #1A1A1A);
+  --watermark-shadow: #fff;
   --btn-text-color: #fff;
-  --btn-shadow: #000;
-  --heart-border-color: #fff;
-  --focus-heart-border-color: #000;
-  --heart-contour-color: #000;
-  --fill-color: #ff0000;
+  --heart-color: #ff0000;
 }
+ 

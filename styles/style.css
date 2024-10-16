@@ -23,21 +23,21 @@ button {
   justify-content: center;
   align-items: center;
   margin-bottom: 103px;
-  color: var(--text-color);
+  color: var(--accent-color);
   font-family: var(--main-font);
-  background-image: var(--background-image);
+  background-image: var(--bg-image);
   background-size: cover;
   background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-variation-settings: "wght" var(--main-font-weight);
+  font-variation-settings: "wght" var(--main-font-wght);
 }
 
 .header {
   width: clamp(375px, 100%, 700px);
   margin: 100px 0;
-  border: var(--border-card);
-  background-color: var(--header-bg-color);
+  border: 2px solid var(--accent-color);
+  background-color: var(--bg-color);
 }
 
 .header_logo {
@@ -113,7 +113,7 @@ button {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: var(--border-menu-color);
+  background-color: var(--accent-color);
   transition: transform 0.3s ease;
   transform: scaleX(0);
   transform-origin: left;
@@ -147,8 +147,8 @@ button {
 
 .card {
   width: clamp(375px, 100%, 696px);
-  outline: var(--border-card);
-  background-color: var(--card-bg-color);
+  outline: 2px solid var(--accent-color);
+  background-color: var(--bg-color);
 }
 
 .picture-base {
@@ -164,7 +164,7 @@ button {
 .card_text {
   margin-bottom: 27px;
   font-family: var(--main-font);
-  font-weight: var(--main-font-weight);
+  font-weight: var(--main-font-wght);
   font-size: 18px;
   line-height: 21px;
 }
@@ -181,7 +181,7 @@ button {
   padding: 6px 10px 3px 10px;
   font-family: var(--main-font);
   font-size: 18px;
-  font-variation-settings: "wght" var(--accent-font-weight);
+  font-variation-settings: "wght" var(--accent-font-wght);
 }
 
 .button__text {
@@ -201,8 +201,7 @@ button {
 .floppy-image {
   position: relative;
   width: 21px;
-  fill: var(--btn-text-color);
-  mix-blend-mode: difference;
+  fill: var(--accent-color);
 }
 
 .like {
@@ -217,8 +216,8 @@ button {
   justify-content: center;
   align-items: center;
   width: 130px;
-  border: var(--border-card);
-  background-color: var(--background-color);
+  border: 2px solid var(--accent-color);
+  background-color: var(--bg-color);
 }
 
 .card__like-button:hover {
@@ -233,7 +232,7 @@ button {
   bottom: 0;
   left: 0;
   z-index: -1;
-  background-color: var(--btn-background-slide);
+  background-color: var(--accent-color);
   transition: transform 0.5s ease-in-out;
   transform: scaleX(0);
   transform-origin: left;
@@ -252,7 +251,8 @@ button {
   display: flex;
   align-items: center;
   margin: 0;
-  border: 2px solid var(--heart-border-color);
+  border: 2px solid transparent;
+  
   padding: 0;
   outline: none;
   color: inherit;
@@ -260,7 +260,7 @@ button {
 }
 
 .card__icon-button:focus-visible {
-  border-color: var(--focus-heart-border-color);
+  border-color: var(--accent-color);
   transition: border-color 0.3s ease;
 }
 
@@ -274,22 +274,22 @@ button {
   right: 25px;
   z-index: 1;
   opacity: 0.5;
-  color: var(--text-color);
+  color: var(--accent-color);
   font-family: var(--accent-font);
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
-  text-shadow: 0 0 1px var(--lable-text-shadow);
+  text-shadow: 0 0 1px var(--watermark-shadow);
   mix-blend-mode: hard-light;
 }
 
 @supports (
-  (text-stroke: 1px var(--lable-text-shadow)) or
-    (-webkit-text-stroke: 1px var(--lable-text-shadow))
+  (text-stroke: 1px var(--watermark-shadow)) or
+    (-webkit-text-stroke: 1px var(--watermark-shadow))
 ) {
   .lable-link {
     text-shadow: none;
-    -webkit-text-stroke: 1px var(--lable-text-shadow);
+    -webkit-text-stroke: 1px var(--watermark-shadow);
     mix-blend-mode: hard-light;
   }
 }
@@ -300,9 +300,9 @@ button {
   justify-content: center;
   align-items: center;
   gap: 8px;
-  border: var(--border-card);
+  border: 2px solid var(--accent-color);
   padding: 15px 21px 15px 19px;
-  background-color: var(--background-color);
+  background-color: var(--bg-color);
 }
 
 .footer_button {
@@ -331,7 +331,7 @@ button {
   z-index: 1;
   border: 2px var(--accent-color) solid;
   padding: 0;
-  background-color: var(--background-color);
+  background-color: var(--bg-color);
 }
 
 .dialog[open] .application {
@@ -363,11 +363,11 @@ button {
   font-weight: 400;
   font-size: 14px;
   line-height: 12.6px;
-  background-color: var(--background-color);
+  background-color: var(--bg-color);
 }
 
 .btn-shadow:focus {
-  box-shadow: 2px 2px 0 0 var(--btn-shadow);
+  box-shadow: 2px 2px 0 0 var(--accent-color);
   outline: none;
   transition: box-shadow 0.3s ease;
 }
