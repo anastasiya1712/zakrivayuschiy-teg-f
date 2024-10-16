@@ -2,19 +2,29 @@
 а так же их изменения в зависимости от ширины устройства */
 
 :root {
-  --main-font: "Inter", sans-serif;
-  --accent-font: "Press Start 2P";
+  --main-font: "Inter";
+  --accent-font: "Press Start 2P", "Arial", sans-serif;
   --background-color: #fff;
   --text-color: #000;
   --accent-color: #000;
   --main-font-weight: 400;
   --accent-font-weight: 700;
   --block-text-weight: 400;
-  --background-image: 
-    repeating-linear-gradient(90deg, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
-    repeating-linear-gradient(0deg, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
-    linear-gradient(0.01% 0, #e7e7e7 #1a1a1a);
-  --header_width: clamp(650px, 700px, 750px);
+  --background-image: repeating-linear-gradient(
+      90deg,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
   --header-bg-color: #fff;
   --card-bg-color: #fff;
   --border-card: 2px solid #000;

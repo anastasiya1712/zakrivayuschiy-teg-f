@@ -20,51 +20,34 @@ button {
 .page {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  min-height: 960px;
+  margin-bottom: 103px;
   color: var(--text-color);
-  font-family: var(--main-font), sans-serif;
+  font-family: var(--main-font);
   background-image: var(--background-image);
   background-size: cover;
   background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-variation-settings: "wght" var(--main-text-weight-light);
-}
-
-:root {
-  color-scheme: normal;
+  font-variation-settings: "wght" var(--main-font-weight);
 }
 
 .header {
-  width: clamp(699px, 700px, 701px);
-  height: clamp(367px, 368px, 369px);
-  margin: auto;
-  margin-top: 102px;
-  margin-bottom: 102px;
+  width: clamp(375px, 100%, 700px);
+  margin: 100px 0;
   border: var(--border-card);
   background-color: var(--header-bg-color);
-}
-
-@media (width <= 375px) {
-  .header {
-    width: clamp(374px, 375px, 376px);
-    height: clamp(326px, 327px, 328px);
-  }
-}
-
-.header_width {
-  width: var(--header_width);
 }
 
 .header_logo {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
-  padding-top: clamp(135px, 136px, 137px);
+  margin: 0 14px 20px 14px;
+  padding-top: clamp(120px, 136px, 136px);
   font-family: var(--accent-font);
   font-weight: 400;
-  font-size: clamp(64px, 65px, 66px);
+  font-size: clamp(49px, 10vw, 65px);
   line-height: 65px;
 }
 
@@ -74,28 +57,28 @@ button {
   margin-bottom: 25px;
   font-family: var(--accent-font);
   font-weight: 400;
-  font-size: clamp(22px, 23px, 24px);
+  font-size: clamp(14px, 4vw, 23px);
   text-transform: uppercase;
 }
 
-.header_logo-group,
 .theme-menu {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.header_logo-group {
-  width: clamp(450px, 455px, 460px);
-  margin: 0 auto;
+  margin-bottom: 25px;
 }
 
 .theme-menu__list {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 11px;
   font-weight: 400;
   font-size: 14px;
+}
+
+.theme-menu__item {
+  margin-left: 15px;
+  line-height: 14px;
 }
 
 .theme-menu__button {
@@ -121,15 +104,6 @@ button {
   left: -12px;
   transform: translateY(-50%);
   animation: pointer_anim 0.5s ease-in-out infinite alternate;
-}
-
-@keyframes pointer_anim {
-  from {
-    left: -20px;
-  }
-  to {
-    left: -16px;
-  }
 }
 
 .theme-menu__button::after {
@@ -161,49 +135,53 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: clamp(695px, 696px, 697px);
-}
-
-@media (width <= 375px) {
-  .main {
-    width: clamp(374px, 375px, 376px);
-  }
 }
 
 .cards {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  align-items: center;
+  gap: 51px;
   margin-bottom: 50px;
 }
 
 .card {
+  width: clamp(375px, 100%, 696px);
   outline: var(--border-card);
   background-color: var(--card-bg-color);
+}
+
+.picture-base {
+  width: clamp(375px, 100%, 696px);
 }
 
 .card_text-block {
   display: flex;
   flex-direction: column;
-  gap: 27px;
-  margin-right: 25px;
-  margin-left: 25px;
-  padding-top: 27px;
-  padding-bottom: 25px;
+  margin: 26px 25px 24px 25px;
 }
 
 .card_text {
+  margin-bottom: 27px;
   font-family: var(--main-font);
   font-weight: var(--main-font-weight);
   font-size: 18px;
   line-height: 21px;
 }
 
+.knowledge_card_text {
+  margin-bottom: 27px;
+}
+
+.memories_card_text {
+  margin-bottom: 25px;
+}
+
 .card_title {
-  padding: 3px 0 3px 10px;
+  padding: 6px 10px 3px 10px;
   font-family: var(--main-font);
-  font-weight: 700;
   font-size: 18px;
+  font-variation-settings: "wght" var(--accent-font-weight);
 }
 
 .button__text {
@@ -217,6 +195,7 @@ button {
   font-size: 14px;
   line-height: 12.6px;
   mix-blend-mode: difference;
+  white-space: nowrap;
 }
 
 .floppy-image {
@@ -228,7 +207,7 @@ button {
 
 .like {
   display: flex;
-  gap: 12px;
+  gap: 4px;
   align-self: flex-end;
 }
 
@@ -238,15 +217,8 @@ button {
   justify-content: center;
   align-items: center;
   width: 130px;
-  height: 38px;
   border: var(--border-card);
-  outline: none;
   background-color: var(--background-color);
-}
-
-.card__like-button:focus {
-  box-shadow: 2px 2px 0 0 var(--btn-shadow);
-  transition: box-shadow 0.3s ease;
 }
 
 .card__like-button:hover {
@@ -300,6 +272,7 @@ button {
   position: absolute;
   top: 25px;
   right: 25px;
+  z-index: 1;
   opacity: 0.5;
   color: var(--text-color);
   font-family: var(--accent-font);
@@ -308,7 +281,6 @@ button {
   line-height: 14px;
   text-shadow: 0 0 1px var(--lable-text-shadow);
   mix-blend-mode: hard-light;
-  z-index: 1;
 }
 
 @supports (
@@ -328,17 +300,9 @@ button {
   justify-content: center;
   align-items: center;
   gap: 8px;
-  width: 335px;
-  height: 55px;
   border: var(--border-card);
+  padding: 15px 21px 15px 19px;
   background-color: var(--background-color);
-}
-
-@media (width <= 375px) {
-  .floppy-button {
-    width: 306px;
-    height: 84px;
-  }
 }
 
 .footer_button {
@@ -361,99 +325,10 @@ button {
   }
 }
 
-.contour {
-  fill: var(--heart-contour-color);
-  transition: opacity 0.1s ease;
-}
-
-.main-body {
-  opacity: 0;
-  fill: var(--heart-contour-color);
-  transition: opacity 0.3s ease;
-}
-
-.core {
-  opacity: 0;
-  fill: var(--heart-contour-color);
-  transition: opacity 0.03s ease;
-}
-
-.sparks {
-  opacity: 0;
-  fill: var(--fill-color);
-}
-
-.like-icon:hover .core {
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
-
-.like-icon:hover .main-body {
-  opacity: 1;
-  transition: opacity 0.3s ease 0.05s;
-}
-
-.like-icon:active .core {
-  opacity: 1;
-  fill: var(--fill-color);
-  transition: opacity 0.3s ease;
-}
-
-.like-icon:active .main-body {
-  opacity: 1;
-  fill: var(--fill-color);
-  transition: opacity 0.3s ease 0.05s;
-}
-
-.like-icon.is-liked .core {
-  opacity: 1;
-  fill: var(--fill-color);
-  transition: opacity 0.3s ease;
-}
-
-.like-icon.is-liked .main-body {
-  opacity: 1;
-  fill: var(--fill-color);
-  transition: opacity 0.3s ease 0.05s;
-}
-
-.like-icon.is-liked .contour {
-  opacity: 1;
-  fill: var(--fill-color);
-  transition: opacity 0.3s ease 0.06s;
-}
-
-.like-icon.is-liked .heart {
-  transform-origin: center;
-  animation: zoom 0.3s 0.1s ease-in 1 alternate;
-}
-
-.like-icon.is-liked .sparks {
-  animation: sparks-opacity 0.3s 0.3s ease-in 1 alternate;
-}
-
-@keyframes zoom {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.5);
-  }
-}
-
-@keyframes sparks-opacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .dialog {
   position: fixed;
   inset: 0;
-  z-index: 99999;
+  z-index: 1;
   border: 2px var(--accent-color) solid;
   padding: 0;
   background-color: var(--background-color);
@@ -478,6 +353,7 @@ button {
 }
 
 .btn-dialog {
+  position: relative;
   min-width: 293px;
   min-height: 38px;
   margin: 30px;
@@ -490,14 +366,15 @@ button {
   background-color: var(--background-color);
 }
 
+.btn-shadow:focus {
+  box-shadow: 2px 2px 0 0 var(--btn-shadow);
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
 .dialog::backdrop {
   opacity: 0.75;
   background-color: #000;
-}
-
-.picture-base {
-  max-width: 696px;
-  max-height: 696px;
 }
 
 .picture_with-sepia {
@@ -508,17 +385,12 @@ button {
   filter: saturate(400%);
 }
 
-.picture_with-hue-rotate {
-  filter: hue-rotate(50%);
-}
-
 .picture_with-invert {
   filter: invert(0.8);
 }
 
 .picture_with-grayscale-and-sepia {
-  filter: grayscale(90%);
-  filter: sepia(0.8);
+  filter: grayscale(90%) sepia(0.8);
 }
 
 .picture_with-blur {
@@ -527,4 +399,47 @@ button {
 
 .picture_with-hue-rotate {
   filter: hue-rotate(70deg);
+}
+
+@media (width <= 376px) {
+  .page {
+    margin-bottom: 100px;
+  }
+
+  .main {
+    width: 0;
+  }
+
+  .header_logo {
+    padding-top: 123px;
+    font-weight: 400;
+    font-size: 49px;
+    line-height: 49px;
+  }
+
+  .header_width {
+    width: 371px;
+  }
+
+  .header_logo-title {
+    font-size: 14px;
+  }
+
+  .picture-base {
+    max-width: 371px;
+    max-height: 371px;
+  }
+
+  .card {
+    width: 371px;
+  }
+
+  .floppy-button {
+    flex-direction: column;
+    padding: 15px 20.5px 15px 19.5px;
+  }
+
+  .floppy-image {
+    width: 28px;
+  }
 }
