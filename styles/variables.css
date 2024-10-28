@@ -7,24 +7,25 @@
   --main-font-wght: 400;
   --accent-font-wght: 700;
   --accent-color: #000;
-  --bg-color: #FFF;
+  --bg-color: #fff;
   --bg-image: repeating-linear-gradient(
       90deg,
-      #D3D3D3,
-      #D3D3D3 2px,
+      #d3d3d3,
+      #d3d3d3 2px,
       transparent 2px,
       transparent 4px
     ),
     repeating-linear-gradient(
       0deg,
-      #D3D3D3,
-      #D3D3D3 2px,
+      #d3d3d3,
+      #d3d3d3 2px,
       transparent 2px,
       transparent 4px
     ),
-    linear-gradient(to bottom, #E7E7E7 0.01%, #1A1A1A);
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
   --watermark-shadow: #fff;
   --btn-text-color: #fff;
   --heart-color: #ff0000;
+  --font-size-base: 14px;
+  --font-size-large: 18px;
 }
- 

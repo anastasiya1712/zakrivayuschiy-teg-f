@@ -46,7 +46,7 @@
     </header>
     <main class="main">
       <section class="posts">
-        <section class="post">
+        <article class="post">
           <h2 class="post-title">
             Фритрек и нулевой спринт: Подготовка к работе
           </h2>
@@ -56,24 +56,28 @@
               class="base-image"
               src="images/image.png"
               alt="Белая машина, в углу тег HTML"
+              loading="lazy"
             />
           </div>
-          <div class="card_text-block">
-            <p class="card_text knowledge_card_text">
+          <div class="post-text-container">
+            <p class="post-text">
               Это было самое начало пути. На этом этапе важно было проникнуться
               основами и настроиться на учёбу. И, возможно, подумать, как новые
               знания могут повлиять на ваше будущее.
             </p>
-            <p class="card_text memories_card_text">
+            <p class="post-text">
               Место для ваших воспоминаний о начале обучения.
             </p>
-            <div class="like">
-              <button type="button" class="card__icon-button">
+            <div class="like" aria-label="Понравилось">
+              <button
+                type="button"
+                class="card__icon-button"
+                aria-label="Поставить лайк"
+              >
                 <svg
                   class="like-icon"
                   width="39"
                   height="36"
-                  viewBox="0 0 39 36"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -99,14 +103,15 @@
               </button>
               <button
                 type="button"
-                class="card__like-button btn-background-slide btn-shadow"
+                class="card__like-button button"
+                aria-label="Лайк"
               >
                 <span class="button__text">Like</span>
               </button>
             </div>
           </div>
-        </section>
-        <section class="post">
+        </article>
+        <article class="post">
           <h2 class="post-title">1 спринт: Я — чистый лист</h2>
           <div class="post-picture">
             <span class="lable">&lt;/HTML&gt;</span>
@@ -114,26 +119,30 @@
               class="base-image image-sepia"
               src="images/image.png"
               alt="Белая машина, в углу тег HTML"
+              loading="lazy"
             />
           </div>
-          <div class="card_text-block">
-            <p class="card_text">
+          <div class="post-text-container">
+            <p class="post-text">
               На первых этапах мы работали со страхами и сомнениями, которые
               часто испытывают новички. Один из них — страх перед чистым листом.
               Это, конечно же, намного сложнее, чем боязнь куска бумаги. Часто
               за этим ощущением скрываются более глубокие вопросы: с чего
               начать? а вдруг будет слишком сложно? что, если я не справлюсь?
             </p>
-            <p class="card_text">
+            <p class="post-text">
               Место для ваших воспоминаний о начале первого спринта.
             </p>
-            <div class="like">
-              <button type="button" class="card__icon-button">
+            <div class="like" aria-label="Понравилось" aria-label="Понравилось">
+              <button
+                type="button"
+                class="card__icon-button"
+                aria-label="Поставить лайк"
+              >
                 <svg
                   class="like-icon"
                   width="39"
                   height="36"
-                  viewBox="0 0 39 36"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -159,14 +168,15 @@
               </button>
               <button
                 type="button"
-                class="card__like-button btn-background-slide btn-shadow"
+                class="card__like-button button"
+                aria-label="Лайк"
               >
                 <span class="button__text">Like</span>
               </button>
             </div>
           </div>
-        </section>
-        <section class="post">
+        </article>
+        <article class="post">
           <h2 class="post-title">1 спринт: А если не получится?</h2>
           <div class="post-picture">
             <span class="lable">&lt;CSS&gt;</span>
@@ -174,24 +184,28 @@
               class="base-image image-saturate"
               src="images/image.png"
               alt="Белая машина, в углу тег CSS"
+              loading="lazy"
             />
           </div>
-          <div class="card_text-block">
-            <p class="card_text">
+          <div class="post-text-container">
+            <p class="post-text">
               Первый проект — позади! Но это всё ещё самое начало пути. Радость
               могла быстро померкнуть и смениться ожиданием провала. Или вы,
               наоборот, могли вдохновиться успехами и поверить в себя.
             </p>
-            <p class="card_text">
+            <p class="post-text">
               Место для ваших воспоминаний об окончании первого спринта.
             </p>
-            <div class="like">
-              <button type="button" class="card__icon-button">
+            <div class="like" aria-label="Понравилось">
+              <button
+                type="button"
+                class="card__icon-button"
+                aria-label="Поставить лайк"
+              >
                 <svg
                   class="like-icon"
                   width="39"
                   height="36"
-                  viewBox="0 0 39 36"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -217,14 +231,15 @@
               </button>
               <button
                 type="button"
-                class="card__like-button btn-background-slide btn-shadow"
+                class="card__like-button button"
+                aria-label="Лайк"
               >
                 <span class="button__text">Like</span>
               </button>
             </div>
           </div>
-        </section>
-        <section class="post">
+        </article>
+        <article class="post">
           <h2 class="post-title">2 спринт: Погоня за идеалом</h2>
           <div class="post-picture">
             <span class="lable">&lt;desigions&gt;</span>
@@ -232,26 +247,30 @@
               class="base-image image-hue-rotate"
               src="images/image.png"
               alt="Белая машина, в углу тег desigions"
+              loading="lazy"
             />
           </div>
-          <div class="card_text-block">
-            <p class="card_text">
+          <div class="post-text-container">
+            <p class="post-text">
               На этом этапе вы уже достаточно разбирались в основах вёрстки,
               чтобы понять, как много ещё впереди. Вы могли попытаться погнаться
               за идеалом и понять, что он недостижим. А, может, вы вовсе и не
               подвержены перфекционизму и вместо того, чтобы сделать идеально,
               старались просто сделать.
             </p>
-            <p class="card_text">
+            <p class="post-text">
               Место для ваших воспоминаний о начале второго спринта.
             </p>
-            <div class="like">
-              <button type="button" class="card__icon-button">
+            <div class="like" aria-label="Понравилось">
+              <button
+                type="button"
+                class="card__icon-button"
+                aria-label="Поставить лайк"
+              >
                 <svg
                   class="like-icon"
                   width="39"
                   height="36"
-                  viewBox="0 0 39 36"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -277,14 +296,15 @@
               </button>
               <button
                 type="button"
-                class="card__like-button btn-background-slide btn-shadow"
+                class="card__like-button button"
+                aria-label="Лайк"
               >
                 <span class="button__text">Like</span>
               </button>
             </div>
           </div>
-        </section>
-        <section class="post">
+        </article>
+        <article class="post">
           <h2 class="post-title">2 спринт: О тех, кто рядом</h2>
           <div class="post-picture">
             <span class="lable">care</span>
@@ -292,10 +312,11 @@
               class="base-image image-invert"
               src="images/image.png"
               alt="Белая машина, в углу надпись care"
+              loading="lazy"
             />
           </div>
-          <div class="card_text-block">
-            <p class="card_text">
+          <div class="post-text-container">
+            <p class="post-text">
               Всё это время вы были не одиноки (хотя, возможно, иногда и
               чувствовали, что одни против целого мира). Вас окружали
               одногруппники, команда сопровождения и просто близкие люди,
@@ -303,16 +324,19 @@
               поддавался. Осваивать что-то новое легче, когда рядом есть
               единомышленники, не правда ли?
             </p>
-            <p class="card_text">
+            <p class="post-text">
               Место для ваших воспоминаний об окончании второго спринта.
             </p>
-            <div class="like">
-              <button type="button" class="card__icon-button">
+            <div class="like" aria-label="Понравилось">
+              <button
+                type="button"
+                class="card__icon-button"
+                aria-label="Поставить лайк"
+              >
                 <svg
                   class="like-icon"
                   width="39"
                   height="36"
-                  viewBox="0 0 39 36"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -338,14 +362,15 @@
               </button>
               <button
                 type="button"
-                class="card__like-button btn-background-slide btn-shadow"
+                class="card__like-button button"
+                aria-label="Лайк"
               >
                 <span class="button__text">Like</span>
               </button>
             </div>
           </div>
-        </section>
-        <section class="post">
+        </article>
+        <article class="post">
           <h2 class="post-title">3 спринт: Обходные стратегии</h2>
           <div class="post-picture">
             <span class="lable">&lt;support&gt;</span>
@@ -353,24 +378,28 @@
               class="base-image image-grayscale-sepia"
               src="images/image.png"
               alt="Белая машина, в углу тег support"
+              loading="lazy"
             />
           </div>
-          <div class="card_text-block">
-            <p class="card_text">
+          <div class="post-text-container">
+            <p class="post-text">
               На этом курсе вы постоянно решали разные задачи. В какой-то момент
               вам могло показаться, что решения просто иссякли. Значит, пришло
               время посмотреть на задачу под другим углом.
             </p>
-            <p class="card_text">
+            <p class="post-text">
               Место для ваших воспоминаний о начале третьего спринта.
             </p>
-            <div class="like">
-              <button type="button" class="card__icon-button">
+            <div class="like" aria-label="Понравилось">
+              <button
+                type="button"
+                class="card__icon-button"
+                aria-label="Поставить лайк"
+              >
                 <svg
                   class="like-icon"
                   width="39"
                   height="36"
-                  viewBox="0 0 39 36"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -396,14 +425,15 @@
               </button>
               <button
                 type="button"
-                class="card__like-button btn-background-slide btn-shadow"
+                class="card__like-button button"
+                aria-label="Лайк"
               >
                 <span class="button__text">Like</span>
               </button>
             </div>
           </div>
-        </section>
-        <section class="post">
+        </article>
+        <article class="post">
           <h2 class="post-title">3 спринт: Когда опускаются руки</h2>
           <div class="post-picture">
             <span class="lable">&lt;lifes-style: none;&gt;</span>
@@ -411,26 +441,30 @@
               class="base-image image-blur"
               src="images/image.png"
               alt="Белая машина, в углу тег lifes-style: none;"
+              loading="lazy"
             />
           </div>
-          <div class="card_text-block">
-            <p class="card_text">
+          <div class="post-text-container">
+            <p class="post-text">
               Во время учёбы часто возникает чувство, когда не знаешь, за что
               хвататься. Вроде и проектную пора сдавать, и задачи хочется
               порешать, и в теории получше разобраться, и жизнь не забыть
               пожить. В такие моменты очень нужна концентрация. Вспомните,
               откуда вы её черпали.
             </p>
-            <p class="card_text">
+            <p class="post-text">
               Место для ваших воспоминаний об окончании третьего спринта.
             </p>
-            <div class="like">
-              <button type="button" class="card__icon-button">
+            <div class="like" aria-label="Понравилось">
+              <button
+                type="button"
+                class="card__icon-button"
+                aria-label="Поставить лайк"
+              >
                 <svg
                   class="like-icon"
                   width="39"
                   height="36"
-                  viewBox="0 0 39 36"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -456,14 +490,15 @@
               </button>
               <button
                 type="button"
-                class="card__like-button btn-background-slide btn-shadow"
+                class="card__like-button button"
+                aria-label="Лайк"
               >
                 <span class="button__text">Like</span>
               </button>
             </div>
           </div>
-        </section>
-        <section class="post">
+        </article>
+        <article class="post">
           <h2 class="post-title">«Сейчас я здесь»</h2>
           <div class="post-picture">
             <span class="lable">&lt;experience&gt;</span>
@@ -471,10 +506,11 @@
               class="base-image image-hue-rotate"
               src="images/image.png"
               alt="Белая машина, в углу тег experience"
+              loading="lazy"
             />
           </div>
-          <div class="card_text-block">
-            <p class="card_text">
+          <div class="post-text-container">
+            <p class="post-text">
               Сейчас вы уже очень много знаете о вёрстке. Но это только начало.
               Во-первых, впереди ещё много материала про «красотищу». Во-вторых,
               с окончанием курса учёба не заканчивается. Вёрстка — это целый
@@ -482,17 +518,20 @@
               получится, но это тот случай, когда важен сам процесс познания.
               Ведь часто путь — и есть результат.
             </p>
-            <p class="card_text">
+            <p class="post-text">
               Место, чтобы остановиться, подумать и написать, что вы чувствуете
               в этой точке пути.
             </p>
-            <div class="like">
-              <button type="button" class="card__icon-button">
+            <div class="like" aria-label="Понравилось">
+              <button
+                type="button"
+                class="card__icon-button"
+                aria-label="Поставить лайк"
+              >
                 <svg
                   class="like-icon"
                   width="39"
                   height="36"
-                  viewBox="0 0 39 36"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -518,27 +557,26 @@
               </button>
               <button
                 type="button"
-                class="card__like-button btn-background-slide btn-shadow"
+                class="card__like-button button"
+                aria-label="Лайк"
               >
                 <span class="button__text">Like</span>
               </button>
             </div>
           </div>
-        </section>
+        </article>
       </section>
     </main>
     <footer class="footer">
       <button
         type="button"
         onclick="window['dialog-floppy'].showModal()"
-        class="floppy-button btn-background-slide btn-shadow"
+        class="floppy-button button"
       >
         <svg viewBox="0 0 29 28" class="floppy-image">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
-        <span class="button__text button_text-with-padding"
-          >Сохранить на память</span
-        >
+        <span class="button__text">Сохранить на память</span>
       </button>
     </footer>
     <dialog class="dialog" id="dialog-floppy">
@@ -552,7 +590,7 @@
       </div>
       <button
         type="button"
-        class="btn-dialog btn-background-slide btn-shadow"
+        class="btn-dialog button"
         onclick="window['dialog-floppy'].close()"
       >
         <span class="button__text">OK</span>
