@@ -84,7 +84,7 @@
   animation: sparks-opacity 0.3s 0.3s ease-in 1 alternate;
 }
 
-@keyframes pointer_anim {
+@keyframes pointer_animation {
   from {
     left: -20px;
   }
