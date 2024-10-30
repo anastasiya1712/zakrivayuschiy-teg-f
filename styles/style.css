@@ -21,6 +21,7 @@
   color: var(--accent-color);
   font-family: var(--main-font);
   background: var(--bg-image) fixed;
+  background-color: var(--bg-color);
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-variation-settings: "wght" var(--main-font-wght);
@@ -113,7 +114,8 @@
 }
 
 .theme-menu__button:focus {
-  opacity: 0.7;
+  outline: none;
+  opacity: 0.6;
 }
 
 .posts {
@@ -207,20 +209,11 @@
   line-height: 21px;
 }
 
-.button__text {
-  color: var(--btn-text-color);
-  font-family: var(--accent-font);
-  font-weight: 400;
-  font-size: var(--font-size-base);
-  line-height: 12.6px;
-  mix-blend-mode: difference;
-  white-space: nowrap;
-}
-
 .floppy-image {
   position: relative;
   width: 21px;
-  fill: var(--accent-color);
+  fill: var(--floppy-color);
+  mix-blend-mode: difference;
 }
 
 .like {
@@ -231,12 +224,6 @@
 
 .card__like-button {
   width: 130px;
-  border: 2px solid var(--accent-color);
-  background-color: var(--bg-color);
-}
-
-.card__like-button:hover {
-  box-shadow: none;
 }
 
 button {
@@ -249,8 +236,14 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: color 0.5s ease-in-out;
-  will-change: transform;
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  font-family: var(--accent-font);
+  font-weight: 400;
+  font-size: var(--font-size-base);
+  line-height: 12.6px;
+  background-color: var(--bg-color);
+  transition: box-shadow 0.3s ease;
 }
 
 .button::before {
@@ -272,6 +265,25 @@ button {
   transform: scaleX(1);
 }
 
+.button:focus {
+  box-shadow: 2px 2px 0 0 var(--accent-color);
+  outline: none;
+}
+
+.button__text {
+  color: var(--btn-text-color);
+  font-family: var(--accent-font);
+  font-weight: 400;
+  font-size: var(--font-size-base);
+  line-height: 12.6px;
+  mix-blend-mode: difference;
+  white-space: nowrap;
+}
+
+.button__text-ok {
+  text-transform: uppercase;
+}
+
 .card__icon-button {
   margin: 0;
   border: 2px solid transparent;
@@ -279,26 +291,23 @@ button {
   outline: none;
   color: inherit;
   background: none;
+  transition: border-color 0.3s ease;
 }
 
 .card__icon-button:focus-visible {
   border-color: var(--accent-color);
-  transition: border-color 0.3s ease;
 }
 
 .floppy-button {
   gap: 8px;
-  border: 2px solid var(--accent-color);
   padding: 15px 21px 15px 19px;
-  background-color: var(--bg-color);
 }
 
 .dialog {
-  position: fixed;
-  inset: 0;
   z-index: 1;
   border: 2px var(--accent-color) solid;
   padding: 0;
+  overflow: hidden;
   background-color: var(--bg-color);
 }
 
@@ -307,7 +316,6 @@ button {
   flex-direction: row;
   gap: 20px;
   max-width: 293px;
-  min-height: 63px;
   margin: 30px 30px 0 30px;
 }
 
@@ -316,28 +324,17 @@ button {
 }
 
 .dialog__text {
+  display: block;
+  max-width: 200px;
   line-height: 21px;
   text-transform: uppercase;
+  white-space: normal;
 }
 
 .btn-dialog {
-  position: relative;
   min-width: 293px;
-  min-height: 38px;
   margin: 30px;
-  border: 2px solid var(--accent-color);
-  color: var(--accent-color);
-  font-family: var(--accent-font);
-  font-weight: 400;
-  font-size: var(--font-size-base);
-  line-height: 12.6px;
-  background-color: var(--bg-color);
-}
-
-.button:focus {
-  box-shadow: 2px 2px 0 0 var(--accent-color);
-  outline: none;
-  transition: box-shadow 0.3s ease;
+  padding: 12.5px 0;
 }
 
 .dialog::backdrop {
@@ -362,7 +359,7 @@ button {
   }
 
   .header_width {
-    width: 371px;
+    max-width: 371px;
   }
 
   .logo-title {
@@ -375,7 +372,7 @@ button {
   }
 
   .post {
-    width: 371px;
+    max-width: 371px;
   }
 
   .floppy-button {

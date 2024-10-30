@@ -567,25 +567,23 @@
         </article>
       </section>
     </main>
-    <footer class="footer">
-      <button
-        type="button"
-        onclick="window['dialog-floppy'].showModal()"
-        class="floppy-button button"
-      >
-        <svg viewBox="0 0 29 28" class="floppy-image">
-          <use href="./svg/floppy.svg#floppy"></use>
-        </svg>
-        <span class="button__text">Сохранить на память</span>
-      </button>
-    </footer>
+    <button
+      type="button"
+      onclick="window['dialog-floppy'].showModal()"
+      class="floppy-button button"
+    >
+      <svg viewBox="0 0 29 28" class="floppy-image">
+        <use href="./svg/floppy.svg#floppy"></use>
+      </svg>
+      <span class="button__text">Сохранить на память</span>
+    </button>
     <dialog class="dialog" id="dialog-floppy">
       <div class="application">
         <svg viewBox="0 0 29 28" class="floppy-image floppy-image-dialog">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <span class="button__text dialog__text"
-          >Вставьте<br />дискету, чтобы<br />продолжить</span
+          >Вставьте дискету, чтобы продолжить</span
         >
       </div>
       <button
@@ -593,7 +591,7 @@
         class="btn-dialog button"
         onclick="window['dialog-floppy'].close()"
       >
-        <span class="button__text">OK</span>
+        <span class="button__text button__text-ok">ok</span>
       </button>
     </dialog>
     <script src="./scripts/like.js"></script>

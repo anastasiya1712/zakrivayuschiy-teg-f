@@ -10,6 +10,7 @@
   --accent-font-wght: 785;
   --accent-color: #00cc14;
   --bg-color: #000;
+  --page-bg-color: #00cc14;
   --bg-image: repeating-linear-gradient(
       90deg,
       #000 0,
@@ -27,6 +28,7 @@
     linear-gradient(to bottom, #007f0c 0.01%, #004306);
   --watermark-shadow: #000;
   --btn-text-color: #00cc14;
+  --floppy-color: #00cc14;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,6 +37,7 @@
     --accent-font-wght: 785;
     --accent-color: #00cc14;
     --bg-color: #000;
+    --page-bg-color: #00cc14;
     --bg-image: repeating-linear-gradient(
         90deg,
         #000 0,
@@ -52,6 +55,7 @@
       linear-gradient(to bottom, #007f0c 0.01%, #004306);
     --watermark-shadow: #000;
     --btn-text-color: #00cc14;
+    --floppy-color: #00cc14;
   }
 }
 
@@ -60,6 +64,7 @@
   --accent-font-wght: 700;
   --accent-color: #000;
   --bg-color: #fff;
+  --page-bg-color: #fff;;
   --bg-image: repeating-linear-gradient(
       90deg,
       #d3d3d3,
@@ -77,4 +82,5 @@
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
   --watermark-shadow: #fff;
   --btn-text-color: #fff;
+  --floppy-color: #fff;
 }

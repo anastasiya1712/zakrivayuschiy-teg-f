@@ -8,6 +8,7 @@
   --accent-font-wght: 700;
   --accent-color: #000;
   --bg-color: #fff;
+  --page-bg-color: #fff;
   --bg-image: repeating-linear-gradient(
       90deg,
       #d3d3d3,
@@ -25,6 +26,7 @@
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
   --watermark-shadow: #fff;
   --btn-text-color: #fff;
+  --floppy-color: #fff;
   --heart-color: #ff0000;
   --font-size-base: 14px;
   --font-size-large: 18px;
