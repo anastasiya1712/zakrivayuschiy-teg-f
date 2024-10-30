@@ -237,7 +237,7 @@ button {
   justify-content: center;
   align-items: center;
   border: 2px solid var(--accent-color);
-  color: var(--accent-color);
+  color: var(--accent-color), #000;
   font-family: var(--accent-font);
   font-weight: 400;
   font-size: var(--font-size-base);
