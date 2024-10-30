@@ -276,6 +276,7 @@ button {
   font-weight: 400;
   font-size: var(--font-size-base);
   line-height: 12.6px;
+  -webkit-mix-blend-mode: difference;
   mix-blend-mode: difference;
   white-space: nowrap;
 }
